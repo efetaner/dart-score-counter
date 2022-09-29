@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>DartScoreCounter</title>
+</head>
+<body>
+ <div>
+    <div class="buttons">
+        <select id="game-type-selector">
+          <option value="31">Choose Value</option>
+          <option value="101">101</option>
+          <option value="201">201</option>
+          <option value="301">301</option>
+          <option value="501">501</option>
+          <option value="701">701</option>
+        </select>
+        
+            <ul id="points-table">
+                <li id="s1">+1</li>
+                <li id="s2">+2</li>
+                <li id="s3">+3</li>
+                <li id="s4">+4</li>
+                <li id="s5">+5</li>
+                <li id="s6">+6</li>
+                <li id="s7">+7</li>
+                <li id="s8">+8</li>
+                <li id="s9">+9</li>
+                <li id="s10">+10</li>
+                <li id="s11">+11</li>
+                <li id="s12">+12</li>
+                <li id="s13">+13</li>
+                <li id="s14">+14</li>
+                <li id="s15">+15</li>
+                <li id="s16">+16</li>
+                <li id="s17">+17</li>
+                <li id="s18">+18</li>
+                <li id="s19">+19</li>
+                <li id="s20">+20</li>
+                <li id="s25">+25</li>
+            </ul>
+            <ul class="functional-buttons">
+                <li id="reset">RESET GAME</li>
+                <li id="reset-select">RESET SELECTION</li>
+                <li id="double">DOUBLE</li>
+                <li id="triple">TRIPLE</li>
+            </ul>
+            <div class="submit-buttons">
+                <button class="sub-btn" id="submit-one"><span class="button_top"> LOG P1 
+                </span></button>
+                <button class="sub-btn" id="submit-two"><span class="button_top"> LOG P2
+                </span></button>
+            </div>
+      </div>
+      <div class="table">
+     
+        <ul class="player-table" id="p1-table">
+            <li>DART 1</li>
+            <li>DART 2</li>
+            <li>DART 3</li>
+        </ul>
+      </div>
+      <p class="player-total-score" id="p1-total-score"></p>
+      <ul class="player-table" id="p2-table">
+        <li>DART 1</li>
+        <li>DART 2</li>
+        <li>DART 3</li>
+    </ul>
+  </div>
+  <p class="player-total-score" id="p2-total-score"></p>
+ </div>   
+  
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>

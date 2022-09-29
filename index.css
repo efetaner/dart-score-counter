@@ -1,0 +1,126 @@
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+                                padding: none;
+                                margin: none;
+                                box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  display: grid;
+  justify-content: center;
+  background-color: rgb(17, 36, 66);
+}
+
+.buttons {
+  margin: auto;
+}
+.player-total-score {
+  background-color: green;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  font-size: x-large;
+}
+
+#game-type-selector{
+  justify-content: center;
+  background-color: green;
+  color: white;
+  border: black 2px;
+  height: 25px;
+  font-size: medium;
+  border-radius: 5px;
+  text-align: center;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 27vw  27vw 27vw;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: larger;
+}
+
+li {
+  text-align: center;
+  border: solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  
+}
+
+.player-table > li {
+  text-align: center;
+  margin-top: 2px;
+  margin-left:2px;
+  border: 2px solid;
+  list-style-type: none;
+  background-color: green;
+  color: azure;
+  border-color: black;
+}
+
+ #points-table > li{
+  text-align: center;
+  border-radius: 10px;
+  height: 40px;
+  margin-top: 4px;
+  margin-left: 2px;
+  margin-right: 2px;
+  background-color: green;
+  color: azure;
+  border-color: black;
+ }
+.player-table {
+  width: calc(100% - 500px);
+}
+
+.functional-buttons{
+  border: none;
+  display: grid;
+  grid-template-columns: 40.5vw  40.5vw;
+}
+.functional-buttons > li {
+  background-color: rgb(170, 11, 11);
+  color: aliceblue;
+  border-color: black;
+  height: 45px;
+  text-align: center;
+}
+.submit-buttons{
+  display: grid;
+  grid-template-columns: 40.5vw  40.5vw ;
+}
+
+/* From uiverse.io by @adamgiebl */
+button {
+  background: #FBCA1F;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  margin-right: 5px;
+ }
+ 
+ button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+ }
+ 
+ button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+ }
