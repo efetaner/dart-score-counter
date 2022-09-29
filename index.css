@@ -22,6 +22,11 @@ body {
 .buttons {
   margin: auto;
 }
+.select-bar-div{
+  margin-top:12px;
+  display: flex;
+  justify-content: center;
+}
 .player-total-score {
   background-color: green;
   color: aliceblue;
@@ -71,16 +76,27 @@ li {
 }
 
  #points-table > li{
-  text-align: center;
-  border-radius: 10px;
-  height: 40px;
-  margin-top: 4px;
-  margin-left: 2px;
-  margin-right: 2px;
-  background-color: green;
-  color: azure;
-  border-color: black;
+  background: green;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  margin-right: 5px;
  }
+
+#points-table > li:hover{
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+   }
+#points-table > li:active{
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+   }
+   
+
 .player-table {
   width: calc(100% - 500px);
 }
@@ -92,19 +108,30 @@ li {
 }
 .functional-buttons > li {
   background-color: rgb(170, 11, 11);
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-color: black;
   height: 45px;
   text-align: center;
 }
+.functional-buttons > li:hover{
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+.functional-buttons > li:active{
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
 .submit-buttons{
-  display: grid;
-  grid-template-columns: 40.5vw  40.5vw ;
+  margin-top:12px;
+  display: flex;
+  justify-content: center;
+
 }
 
 /* From uiverse.io by @adamgiebl */
 button {
-  background: #FBCA1F;
+  background: #dae722;
   font-family: inherit;
   padding: 0.6em 1.3em;
   font-weight: 900;
