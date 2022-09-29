@@ -27,12 +27,16 @@ body {
   display: flex;
   justify-content: center;
 }
+.total-score-div{
+  display: flex;
+  justify-content: center;
+}
 .player-total-score {
   background-color: green;
   color: aliceblue;
   display: flex;
   justify-content: center;
-  width: 80vw;
+  width: 97vw;
   font-size: x-large;
 }
 

@@ -33,6 +33,7 @@ const p1Table = document.getElementById("p1-table")
 const p1TotalScore = document.getElementById("p1-total-score")
 const p2Table = document.getElementById("p2-table")
 const p2TotalScore = document.getElementById("p2-total-score")
+
 let value = 0
 
 
@@ -149,8 +150,8 @@ function resetGame(){
   totalP1 = 101
   p1Table.innerHTML = `<li>DART 1</li> <li>DART 2</li> <li>DART 3</li>`
   p2Table.innerHTML = `<li>DART 1</li> <li>DART 2</li> <li>DART 3</li>`
-  p1TotalScore.innerHTML = ``
-  p2TotalScore.innerHTML = ``
+  p1TotalScore.innerHTML = `Score: ${totalP1}`
+  p2TotalScore.innerHTML = `Score: ${totalP2}`
 }
 
 function submitValP1(){
